@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    web:
+        container_name: thing-or-two
+        restart: always
+        build: .
+        ports: 
+            - "5000:3000"
+    mongo:
+        container_name: mymongodatabase
+        image: mongo
+        ports: 
+            

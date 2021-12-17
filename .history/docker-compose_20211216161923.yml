@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    web:
+        container_name: thing-or-two
+        restart: always
+        build: .
+        ports: 
+            -
